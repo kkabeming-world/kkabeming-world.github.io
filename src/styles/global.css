@@ -115,14 +115,93 @@ hr {
 .hero-card {
 	padding: clamp(1.6rem, 4vw, 3rem);
 	display: grid;
-	grid-template-columns: minmax(0, 1.9fr) minmax(260px, 0.9fr);
-	gap: 2rem;
+	grid-template-columns: minmax(0, 1.55fr) minmax(280px, 0.85fr);
+	gap: 1.4rem;
+	align-items: stretch;
+}
+
+.hero-note {
+	margin-top: 1rem;
+	font-size: 1rem;
+	color: rgb(var(--gray-dark));
+}
+
+.hero-visual {
+	position: relative;
+	overflow: hidden;
+	padding: 1.4rem;
+	min-height: 260px;
+	background:
+		radial-gradient(circle at top left, rgba(138, 92, 246, 0.2), transparent 38%),
+		linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(248, 243, 255, 0.88));
+}
+
+.visual-badge {
+	display: inline-flex;
+	padding: 0.45rem 0.75rem;
+	border-radius: 999px;
+	background: rgba(255, 255, 255, 0.9);
+	font-size: 0.76rem;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	color: var(--accent-strong);
+}
+
+.visual-core {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	gap: 0.7rem;
+	flex-wrap: wrap;
+	margin-top: 4rem;
+}
+
+.visual-core span {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.7rem 1rem;
+	border-radius: 999px;
+	background: rgba(255, 255, 255, 0.92);
+	box-shadow: 0 10px 24px rgba(90, 51, 197, 0.12);
+	font-weight: 700;
+	color: rgb(var(--ink));
+}
+
+.visual-copy {
+	position: relative;
+	z-index: 1;
+	margin-top: 1.2rem;
+	max-width: 18rem;
+	font-size: 0.98rem;
+	color: rgb(var(--gray));
+}
+
+.visual-orbit {
+	position: absolute;
+	border-radius: 999px;
+	border: 1px solid rgba(138, 92, 246, 0.18);
+}
+
+.visual-orbit-a {
+	width: 220px;
+	height: 220px;
+	right: -40px;
+	top: 30px;
+}
+
+.visual-orbit-b {
+	width: 140px;
+	height: 140px;
+	right: 30px;
+	top: 70px;
 }
 
 .hero-meta {
 	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
 	gap: 1rem;
-	align-content: start;
+	grid-column: 1 / -1;
 }
 
 .hero-meta div {
@@ -202,11 +281,31 @@ hr {
 	margin-bottom: 1rem;
 }
 
+.section-copy {
+	margin: 0.4rem 0 0;
+	color: rgb(var(--gray));
+	font-size: 0.98rem;
+}
+
+.entry-card-top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.75rem;
+	margin-bottom: 0.65rem;
+}
+
 .entry-type {
-	margin: 0 0 0.55rem;
+	margin: 0;
 	font-size: 0.82rem;
 	font-weight: 700;
 	color: var(--accent-strong);
+}
+
+.entry-date {
+	margin: 0;
+	font-size: 0.85rem;
+	color: rgb(var(--gray));
 }
 
 .section-intro {
