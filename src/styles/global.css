@@ -172,13 +172,38 @@ hr {
 	color: var(--accent-strong);
 }
 
+.visual-banner-placeholder {
+	position: relative;
+	z-index: 1;
+	margin-top: 1rem;
+	padding: 1rem 1.1rem;
+	border-radius: 20px;
+	border: 1px dashed rgba(138, 92, 246, 0.35);
+	background: rgba(255, 255, 255, 0.68);
+}
+
+.visual-banner-label {
+	margin: 0 0 0.35rem;
+	font-size: 0.78rem;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--accent-strong);
+}
+
+.visual-banner-copy {
+	margin: 0;
+	font-size: 0.95rem;
+	color: rgb(var(--gray));
+}
+
 .visual-core {
 	position: relative;
 	z-index: 1;
 	display: flex;
 	gap: 0.7rem;
 	flex-wrap: wrap;
-	margin-top: 4rem;
+	margin-top: 1.2rem;
 }
 
 .visual-core span {
