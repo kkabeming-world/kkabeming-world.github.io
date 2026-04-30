@@ -26,8 +26,9 @@ const rssHref = new URL(withBase('rss.xml'), rssBase).href;
 <!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="icon" type="image/svg+xml" href={withBase('favicon.svg')} />
+<link rel="icon" type="image/png" href={withBase('favicon.png')} />
 <link rel="icon" href={withBase('favicon.ico')} />
+<link rel="apple-touch-icon" href={withBase('apple-touch-icon.png')} />
 <link rel="sitemap" href={withBase('sitemap-index.xml')} />
 <link rel="alternate" type="application/rss+xml" title={SITE_TITLE} href={rssHref} />
 <meta name="generator" content={Astro.generator} />
